@@ -6,7 +6,7 @@ title: "Abhi's Space"
 title: "Welcome to Abhi's Space"
 about:
   template: jolla
-  image: profile.jpg
+  image: profile.JPG
   links:
     - icon: instagram
       text: Instagram

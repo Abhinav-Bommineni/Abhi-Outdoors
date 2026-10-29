@@ -1,0 +1,25 @@
+
+website:
+  title: "Abhi Outdoors"
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: projects/index.qmd
+        text: Projects
+      - href: gallery/index.qmd
+        text: Photography
+      - href: essays/index.qmd
+        text: Essays & Field Notes
+      - href: education/index.qmd
+        text: Nature Education
+      - href: archives/index.qmd
+        text: Archives
+
+format:
+  html:
+    theme: darkly
+    css: styles.css

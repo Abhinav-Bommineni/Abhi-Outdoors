@@ -1,0 +1,25 @@
+---
+title: "Abhi's Space"
+---
+
+---
+title: "Welcome to Abhi's Space"
+about:
+  template: jolla
+  image: profile.jpg
+  links:
+    - icon: instagram
+      text: Instagram
+      href: https://instagram.com/ambitious._.juvenile
+    - icon: envelope
+      text: Gmail
+      href: mailto:abhinav336698@gmail.com
+    - icon: globe
+      text: iNaturalist
+      href: https://www.inaturalist.org/people/8840360
+---
+
+
+## Hi, I'm Abhi!
+
+Hello, I'm Abhi! I'm a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me. I'm interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others. When I'm not out in the wild, you can find me strumming my guitar or diving into a good book. Welcome to my space, where I share my passions and adventures!

@@ -4,14 +4,26 @@ project:
 
 website:
   title: "Abhi Outdoors"
+  description: "Ecology, wildlife photography, field research and nature education."
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
+      - text: Explore
+        menu:
+          - href: projects/index.qmd
+            text: Projects
+          - href: gallery/index.qmd
+            text: Photography
+          - href: essays/index.qmd
+            text: Essays & Field Notes
+          - href: education/index.qmd
+            text: Nature Education
 
 format:
   html:
     theme: cosmo
     toc: true
+    smooth-scroll: true

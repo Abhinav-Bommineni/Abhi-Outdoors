@@ -4,14 +4,14 @@
     "href": "Homepage/index.html",
     "title": "Welcome to Abhi’s Space",
     "section": "",
-    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me. I’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others. When I’m not out in the wild, you can find me strumming my guitar or diving into a good book. Welcome to my space, where I share my passions and adventures!"
+    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
   },
   {
     "objectID": "Homepage/index.html#hi-im-abhi",
     "href": "Homepage/index.html#hi-im-abhi",
     "title": "Welcome to Abhi’s Space",
     "section": "",
-    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me. I’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others. When I’m not out in the wild, you can find me strumming my guitar or diving into a good book. Welcome to my space, where I share my passions and adventures!"
+    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
   },
   {
     "objectID": "About page/about.html",
@@ -33,5 +33,54 @@
     "title": "Projects",
     "section": "",
     "text": "Projects\nField research, ecological restoration, and ongoing investigations into the natural world."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "A little about me",
+    "section": "",
+    "text": "I’m Abhi, a student, wildlife photographer, naturalist, musician, and a few other things that don’t fit neatly into a single box.\nI spend a lot of my time at Farmhill, where I’m learning about the natural world by actually getting out into it. I’m interested in ecology, birds, and the small, often overlooked details of the landscapes around me.\nLately, that’s meant spending time observing wildlife, documenting biodiversity, and exploring ideas around ecological restoration.\nPhotography is a big part of this. I like being able to spend time with a subject, understand it a little better, and come away with a photograph that tells some part of its story.\nI’m particularly drawn to birds and wildlife, although I’m just as likely to photograph an interesting landscape or some tiny detail I happened to notice.\nOutside the field, I play guitar and drums, write music, run, trek, and occasionally get carried away with an entirely unrelated interest.\nI like learning things, making things, and figuring out how things work. Sometimes that leads somewhere useful. Sometimes it leads to twenty open browser tabs and a new project I probably didn’t need to start."
+  },
+  {
+    "objectID": "about.html#why-this-website-exists",
+    "href": "about.html#why-this-website-exists",
+    "title": "A little about me",
+    "section": "Why this website exists",
+    "text": "Why this website exists\nThis website is a place to put some of that work.\nYou’ll find my photographs, field notes, ecological projects, writing, and other things I feel like sharing. It’s not intended to be a perfectly curated record of everything I’ve done.\nI’d rather it grow with me, reflect what I’m learning, and leave room for things I haven’t discovered yet.\nHave a look around.\n\nInstagram · iNaturalist · Email"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to Abhi’s Space",
+    "section": "",
+    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
+  },
+  {
+    "objectID": "index.html#hi-im-abhi",
+    "href": "index.html#hi-im-abhi",
+    "title": "Welcome to Abhi’s Space",
+    "section": "",
+    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
+  },
+  {
+    "objectID": "Essays/index.html",
+    "href": "Essays/index.html",
+    "title": "Essays & Field Notes",
+    "section": "",
+    "text": "Essays & Field Notes\nWriting about ecology, field observations, conservation, and the relationships between people and nature."
+  },
+  {
+    "objectID": "Gallery/index.html",
+    "href": "Gallery/index.html",
+    "title": "Photography",
+    "section": "",
+    "text": "Photography\nA visual record of wildlife, landscapes, and the small details of the natural world."
+  },
+  {
+    "objectID": "Nature_Education/index.html",
+    "href": "Nature_Education/index.html",
+    "title": "Nature Education",
+    "section": "",
+    "text": "Nature Education\nLearning resources, field activities, and materials for understanding the living world."
   }
 ]

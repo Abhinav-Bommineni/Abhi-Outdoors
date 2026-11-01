@@ -44,16 +44,44 @@
   {
     "objectID": "Homepage/index.html",
     "href": "Homepage/index.html",
-    "title": "Welcome to Abhi’s Space",
+    "title": "Abhi’s Space",
     "section": "",
-    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
+    "text": ":::"
   },
   {
-    "objectID": "Homepage/index.html#hi-im-abhi",
-    "href": "Homepage/index.html#hi-im-abhi",
-    "title": "Welcome to Abhi’s Space",
-    "section": "",
-    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
+    "objectID": "Homepage/index.html#hello-im-abhi.",
+    "href": "Homepage/index.html#hello-im-abhi.",
+    "title": "Abhi’s Space",
+    "section": "Hello, I’m Abhi.",
+    "text": "Hello, I’m Abhi.\nI’m a student, naturalist, wildlife photographer, musician and an endlessly curious person who loves exploring the world around me.\nI’m fascinated by the little details that often go unnoticed, from the ecology of a scrubland to the behaviour of a bird, and the stories hidden in everyday life.\nWhen I’m not out exploring, you might find me with a camera, a guitar, a book, or probably several unfinished projects.\nWelcome to my little corner of the internet."
+  },
+  {
+    "objectID": "Homepage/index.html#things-i-spend-my-time-doing.",
+    "href": "Homepage/index.html#things-i-spend-my-time-doing.",
+    "title": "Abhi’s Space",
+    "section": "Things I spend my time doing.",
+    "text": "Things I spend my time doing.\nA few different interests, connected by one common thread: curiosity.\n\n\nPhotography\nWildlife, landscapes and little details from the natural world.\nExplore photography →\n\n\nEcology & Projects\nFieldwork, ecological experiments, observations and ongoing projects.\nExplore projects →\n\n\nWriting\nEssays, field notes, reflections and the occasional random thought.\nRead my writing →\n\n\nNature Education\nResources, activities and ideas for understanding the natural world.\nExplore resources →"
+  },
+  {
+    "objectID": "Homepage/index.html#currently-exploring.",
+    "href": "Homepage/index.html#currently-exploring.",
+    "title": "Abhi’s Space",
+    "section": "Currently exploring.",
+    "text": "Currently exploring.\nA collection of ongoing projects, experiments and things I’m curious about.\nSee all projects →"
+  },
+  {
+    "objectID": "Homepage/index.html#through-the-lens.",
+    "href": "Homepage/index.html#through-the-lens.",
+    "title": "Abhi’s Space",
+    "section": "Through the lens.",
+    "text": "Through the lens.\nA few moments, observations and encounters from behind the camera.\nExplore the gallery →"
+  },
+  {
+    "objectID": "Homepage/index.html#theres-always-more-to-explore.",
+    "href": "Homepage/index.html#theres-always-more-to-explore.",
+    "title": "Abhi’s Space",
+    "section": "There’s always more to explore.",
+    "text": "There’s always more to explore.\nThanks for stopping by.\nAbout me · Instagram · iNaturalist"
   },
   {
     "objectID": "Nature_Education/index.html",
@@ -61,5 +89,12 @@
     "title": "Nature Education",
     "section": "",
     "text": "Nature Education\nLearning resources, field activities, and materials for understanding the living world."
+  },
+  {
+    "objectID": "Homepage/index.html#what-im-currently-exploring.",
+    "href": "Homepage/index.html#what-im-currently-exploring.",
+    "title": "Abhi’s Space",
+    "section": "What I’m Currently exploring.",
+    "text": "What I’m Currently exploring.\nA collection of ongoing projects, experiments and things I’m curious about.\nSee all projects →"
   }
 ]

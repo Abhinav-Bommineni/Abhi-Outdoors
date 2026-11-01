@@ -256,3 +256,188 @@ hr {
     animation-duration: 0.01ms !important;
   }
 }
+
+
+
+/* ==========================================
+   HOMEPAGE DESIGN
+   ========================================== */
+
+/* 1. HOMEPAGE LAYOUT */
+
+body:has(.hero-section) main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+body:has(.hero-section) #quarto-content {
+  padding: 0;
+}
+
+body:has(.hero-section) .content {
+  max-width: none;
+  padding: 0;
+}
+
+/* 2. CINEMATIC HERO */
+
+.hero-section {
+  width: 100vw;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin-left: calc(50% - 50vw);
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.12),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url("images/homepage/hero-night-sky.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+/* 3. HOMEPAGE NAVIGATION */
+
+body:has(.hero-section) .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: transparent;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: none;
+
+  padding: 1rem 2rem;
+  transition: background 300ms ease,
+              backdrop-filter 300ms ease;
+}
+
+/* Navigation after scrolling */
+
+body:has(.hero-section) .navbar.scrolled {
+  background: rgba(9, 11, 9, 0.94);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+  position: fixed;
+}
+
+/* 4. HOMEPAGE SECTIONS */
+
+.intro-section,
+.explore-section,
+.current-section,
+.photography-section,
+.closing-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7rem 2rem;
+}
+
+.intro-section {
+  max-width: 950px;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.intro-section h2 {
+  margin-bottom: 2rem;
+}
+
+.intro-section p {
+  font-size: 1.12rem;
+  line-height: 1.9;
+}
+
+/* 5. EXPLORE GRID */
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.explore-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 2.5rem;
+  min-height: 220px;
+
+  transition: transform 250ms ease,
+              background 250ms ease,
+              border-color 250ms ease;
+}
+
+.explore-card:hover {
+  transform: translateY(-5px);
+  background: var(--bg-tertiary);
+  border-color: rgba(182,197,169,0.4);
+}
+
+.explore-card h3 {
+  margin-bottom: 1rem;
+}
+
+.explore-card p {
+  font-size: 0.95rem;
+}
+
+/* 6. SECTION SPACING */
+
+.current-section,
+.photography-section {
+  border-top: 1px solid var(--border);
+}
+
+.closing-section {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.closing-section p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 7. RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: 100svh;
+    background-position: center;
+  }
+
+  body:has(.hero-section) .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .intro-section,
+  .explore-section,
+  .current-section,
+  .photography-section,
+  .closing-section {
+    padding: 4rem 1.3rem;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .explore-card {
+    min-height: 180px;
+    padding: 1.8rem;
+  }
+}

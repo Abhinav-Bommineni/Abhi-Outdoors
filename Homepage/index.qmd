@@ -1,26 +1,104 @@
+
 ---
-title: "Welcome to  Abhi's Space"
-about:
-  template: jolla
-  image: profile.JPG
-  links:
-    - icon: instagram
-      text: Instagram
-      href: https://instagram.com/ambitious._.juvenile
-    - icon: envelope
-      text: Gmail
-      href: mailto:abhinav336698@gmail.com
-    - icon: globe
-      text: iNaturalist
-      href: https://www.inaturalist.org/people/8840360
+title: "Abhi's Space"
+page-layout: full
 ---
 
-## Hi, I'm Abhi!
+::: {.hero-section}
+:::
 
-Hello, I'm Abhi! I'm a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.
+::: {.hero-content}
+Curious about the world. Always exploring.
+:::
 
-I'm interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.
+::: {.scroll-indicator}
+SCROLL TO EXPLORE ↓
+:::
+:::
 
-When I'm not out in the wild, you can find me strumming my guitar or diving into a good book.
+::: {.intro-section}
 
-Welcome to my space, where I share my passions and adventures!
+## Hello, I'm Abhi.
+
+I'm a student, naturalist, wildlife photographer, musician and an endlessly curious person who loves exploring the world around me.
+
+I'm fascinated by the little details that often go unnoticed, from the ecology of a scrubland to the behaviour of a bird, and the stories hidden in everyday life.
+
+When I'm not out exploring, you might find me with a camera, a guitar, a book, or probably several unfinished projects.
+
+Welcome to my little corner of the internet.
+
+:::
+
+::: {.explore-section}
+
+## Things I spend my time doing.
+
+A few different interests, connected by one common thread: curiosity.
+
+::: {.explore-grid}
+
+::: {.explore-card}
+### Photography
+
+Wildlife, landscapes and little details from the natural world.
+
+[Explore photography →](gallery/index.qmd)
+:::
+
+::: {.explore-card}
+### Ecology & Projects
+
+Fieldwork, ecological experiments, observations and ongoing projects.
+
+[Explore projects →](projects/index.qmd)
+:::
+
+::: {.explore-card}
+### Writing
+
+Essays, field notes, reflections and the occasional random thought.
+
+[Read my writing →](essays/index.qmd)
+:::
+
+::: {.explore-card}
+### Nature Education
+
+Resources, activities and ideas for understanding the natural world.
+
+[Explore resources →](education/index.qmd)
+:::
+
+:::
+:::
+
+::: {.current-section}
+
+## What I'm Currently exploring.
+
+A collection of ongoing projects, experiments and things I'm curious about.
+
+[See all projects →](projects/index.qmd)
+
+:::
+
+::: {.photography-section}
+
+## Through the lens.
+
+A few moments, observations and encounters from behind the camera.
+
+[Explore the gallery →](gallery/index.qmd)
+
+:::
+
+::: {.closing-section}
+
+## There's always more to explore.
+
+Thanks for stopping by.
+
+[About me](about.qmd) · [Instagram](https://instagram.com/ambitious._.juvenile) · [iNaturalist](https://www.inaturalist.org/people/8840360)
+
+:::

@@ -79,7 +79,7 @@ Some moments from the natural world.
 
 ::: {.photo-grid}
 
-![](pic1.JPG)
+![](pic1.jpg)
 
 ![](pic2.JPG)
 
@@ -91,11 +91,11 @@ Some moments from the natural world.
 
 ![](pic6.JPG)
 
-![](pic7.JPEG)
+![](pic7.jpeg)
 
-![](pic8.JPG)
+![](pic8.jpg)
 
-![](pic9.JPG)
+![](pic9.jpg)
 
 ![](pic10.JPG)
 
@@ -107,7 +107,7 @@ Some moments from the natural world.
 
 ![](pic14.JPG)
 
-![](pic15.JPG)
+![](pic15.jpg)
 
 ![](pic16.JPG)
 

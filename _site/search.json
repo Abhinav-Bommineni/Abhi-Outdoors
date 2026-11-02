@@ -1,24 +1,45 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "Homepage/index.html",
+    "href": "Homepage/index.html",
     "title": "Welcome to Abhi’s Space",
     "section": "",
-    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
+    "text": "Exploring the natural world, one story at a time."
   },
   {
-    "objectID": "index.html#hi-im-abhi",
-    "href": "index.html#hi-im-abhi",
+    "objectID": "Homepage/index.html#hi-im-abhi",
+    "href": "Homepage/index.html#hi-im-abhi",
     "title": "Welcome to Abhi’s Space",
-    "section": "",
-    "text": "Hello, I’m Abhi! I’m a student, naturalist, wildlife photographer, musician, and an endlessly curious person who loves exploring the world around me.\nI’m interested in the little details that often go unnoticed, and the surreality of our everyday lives. I enjoy capturing the beauty of nature through my lens and sharing my experiences with others.\nWhen I’m not out in the wild, you can find me strumming my guitar or diving into a good book.\nWelcome to my space, where I share my passions and adventures!"
+    "section": "Hi, I’m Abhi!",
+    "text": "Hi, I’m Abhi!\nI’m a nature photographer, wildlife enthusiast, birdwatcher and writer.\nI love photography, ecology, birds, music and running. This website is where I share my photography, essays, field notes, projects and other things that interest me.\nIt’s a little corner of the internet where I document what I discover, what I create and what I learn along the way."
   },
   {
-    "objectID": "Gallery/index.html",
-    "href": "Gallery/index.html",
-    "title": "Photography",
+    "objectID": "Homepage/index.html#explore",
+    "href": "Homepage/index.html#explore",
+    "title": "Welcome to Abhi’s Space",
+    "section": "Explore",
+    "text": "Explore\nA collection of things I observe, create and work on.\n\n\n01\n\nPhotography\nWildlife, landscapes, birds and moments worth remembering.\nExplore photography →\n\n\n\n02\n\nEcology & Projects\nField research, conservation, restoration and ongoing experiments.\nExplore projects →\n\n\n\n03\n\nWriting & Essays\nThoughts, observations, stories and occasional ramblings.\nRead my writing →\n\n\n\n04\n\nNature Education\nLearning resources, field guides and things I’ve learnt along the way.\nExplore resources →"
+  },
+  {
+    "objectID": "Homepage/index.html#through-the-lens",
+    "href": "Homepage/index.html#through-the-lens",
+    "title": "Welcome to Abhi’s Space",
+    "section": "Through the Lens",
+    "text": "Through the Lens\nSome moments from the natural world.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nView the photography collection → ## Let’s Stay Connected\nMore photographs, observations and discoveries.\nInstagram ↗ · iNaturalist ↗ · About me ↗\n\n© 2026 Abhi’s Space · Made with curiosity."
+  },
+  {
+    "objectID": "Homepage/index.html#lets-stay-connected",
+    "href": "Homepage/index.html#lets-stay-connected",
+    "title": "Welcome to Abhi’s Space",
+    "section": "Let’s Stay Connected",
+    "text": "Let’s Stay Connected\nMore photographs, observations and discoveries.\nInstagram ↗ · iNaturalist ↗ · About me ↗\n\n© 2026 Abhi’s Space · Made with curiosity."
+  },
+  {
+    "objectID": "Essays/index.html",
+    "href": "Essays/index.html",
+    "title": "Essays & Field Notes",
     "section": "",
-    "text": "Photography\nA visual record of wildlife, landscapes, and the small details of the natural world."
+    "text": "Essays & Field Notes\nWriting about ecology, field observations, conservation, and the relationships between people and nature."
   },
   {
     "objectID": "about.html",
@@ -35,53 +56,11 @@
     "text": "Why this website exists\nThis website is a place to put some of that work.\nYou’ll find my photographs, field notes, ecological projects, writing, and other things I feel like sharing. It’s not intended to be a perfectly curated record of everything I’ve done.\nI’d rather it grow with me, reflect what I’m learning, and leave room for things I haven’t discovered yet.\nHave a look around.\n\nInstagram · iNaturalist · Email"
   },
   {
-    "objectID": "Essays/index.html",
-    "href": "Essays/index.html",
-    "title": "Essays & Field Notes",
+    "objectID": "Gallery/index.html",
+    "href": "Gallery/index.html",
+    "title": "Photography",
     "section": "",
-    "text": "Essays & Field Notes\nWriting about ecology, field observations, conservation, and the relationships between people and nature."
-  },
-  {
-    "objectID": "Homepage/index.html",
-    "href": "Homepage/index.html",
-    "title": "Abhi’s Space",
-    "section": "",
-    "text": ":::"
-  },
-  {
-    "objectID": "Homepage/index.html#hello-im-abhi.",
-    "href": "Homepage/index.html#hello-im-abhi.",
-    "title": "Abhi’s Space",
-    "section": "Hello, I’m Abhi.",
-    "text": "Hello, I’m Abhi.\nI’m a student, naturalist, wildlife photographer, musician and an endlessly curious person who loves exploring the world around me.\nI’m fascinated by the little details that often go unnoticed, from the ecology of a scrubland to the behaviour of a bird, and the stories hidden in everyday life.\nWhen I’m not out exploring, you might find me with a camera, a guitar, a book, or probably several unfinished projects.\nWelcome to my little corner of the internet."
-  },
-  {
-    "objectID": "Homepage/index.html#things-i-spend-my-time-doing.",
-    "href": "Homepage/index.html#things-i-spend-my-time-doing.",
-    "title": "Abhi’s Space",
-    "section": "Things I spend my time doing.",
-    "text": "Things I spend my time doing.\nA few different interests, connected by one common thread: curiosity.\n\n\nPhotography\nWildlife, landscapes and little details from the natural world.\nExplore photography →\n\n\nEcology & Projects\nFieldwork, ecological experiments, observations and ongoing projects.\nExplore projects →\n\n\nWriting\nEssays, field notes, reflections and the occasional random thought.\nRead my writing →\n\n\nNature Education\nResources, activities and ideas for understanding the natural world.\nExplore resources →"
-  },
-  {
-    "objectID": "Homepage/index.html#currently-exploring.",
-    "href": "Homepage/index.html#currently-exploring.",
-    "title": "Abhi’s Space",
-    "section": "Currently exploring.",
-    "text": "Currently exploring.\nA collection of ongoing projects, experiments and things I’m curious about.\nSee all projects →"
-  },
-  {
-    "objectID": "Homepage/index.html#through-the-lens.",
-    "href": "Homepage/index.html#through-the-lens.",
-    "title": "Abhi’s Space",
-    "section": "Through the lens.",
-    "text": "Through the lens.\nA few moments, observations and encounters from behind the camera.\nExplore the gallery →"
-  },
-  {
-    "objectID": "Homepage/index.html#theres-always-more-to-explore.",
-    "href": "Homepage/index.html#theres-always-more-to-explore.",
-    "title": "Abhi’s Space",
-    "section": "There’s always more to explore.",
-    "text": "There’s always more to explore.\nThanks for stopping by.\nAbout me · Instagram · iNaturalist"
+    "text": "Photography\nA visual record of wildlife, landscapes, and the small details of the natural world."
   },
   {
     "objectID": "Nature_Education/index.html",
@@ -89,12 +68,5 @@
     "title": "Nature Education",
     "section": "",
     "text": "Nature Education\nLearning resources, field activities, and materials for understanding the living world."
-  },
-  {
-    "objectID": "Homepage/index.html#what-im-currently-exploring.",
-    "href": "Homepage/index.html#what-im-currently-exploring.",
-    "title": "Abhi’s Space",
-    "section": "What I’m Currently exploring.",
-    "text": "What I’m Currently exploring.\nA collection of ongoing projects, experiments and things I’m curious about.\nSee all projects →"
   }
 ]

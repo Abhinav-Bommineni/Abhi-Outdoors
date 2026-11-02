@@ -1,10 +1,12 @@
-
 /* ==========================================
-   ABHI OUTDOORS
+   ABHI'S SPACE
    Editorial dark design system
    ========================================== */
 
-/* 1. DESIGN TOKENS */
+
+/* ------------------------------------------
+   1. DESIGN TOKENS
+   ------------------------------------------ */
 
 :root {
   --bg-primary: #090b09;
@@ -20,12 +22,15 @@
 
   --border: rgba(230, 235, 220, 0.13);
 
-  --font-editorial: "Georgia", "Times New Roman", serif;
-  --font-interface: -apple-system, BlinkMacSystemFont,
-                    "Segoe UI", sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 
-/* 2. GLOBAL STYLING */
+
+/* ------------------------------------------
+   2. GLOBAL STYLING
+   ------------------------------------------ */
 
 html {
   scroll-behavior: smooth;
@@ -35,216 +40,611 @@ html {
 body {
   background: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-interface);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
 }
 
-/* 3. TYPOGRAPHY */
-
-h1, h2, h3, h4, h5 {
-  color: var(--text-primary);
-  font-family: var(--font-editorial);
-  font-weight: 400;
-  letter-spacing: -0.035em;
-  line-height: 1.15;
-}
-
-h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
-}
-
-h2 {
-  font-size: clamp(2.2rem, 5vw, 4rem);
-}
-
-h3 {
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
+#quarto-content {
+  background: var(--bg-primary);
 }
 
 p {
   color: var(--text-secondary);
-  max-width: 72ch;
 }
 
-.subtitle {
-  color: var(--text-secondary);
-  font-family: var(--font-interface);
-  font-size: 1.15rem;
-}
-
-/* 4. NAVIGATION */
-
-.navbar {
-  background: rgba(9, 11, 9, 0.92);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(18px);
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
-}
-
-.navbar-brand {
-  color: var(--text-primary) !important;
-  font-weight: 600;
-  letter-spacing: -0.04em;
-}
-
-.navbar .nav-link {
-  color: var(--text-secondary) !important;
-  font-size: 0.9rem;
-  transition: color 180ms ease;
-}
-
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  color: var(--text-primary) !important;
-}
-
-/* Dropdown menu */
-
-.dropdown-menu {
-  background: var(--bg-tertiary);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 0.5rem;
-}
-
-.dropdown-item {
-  color: var(--text-secondary);
-  border-radius: 7px;
-  padding: 0.6rem 0.8rem;
-}
-
-.dropdown-item:hover {
-  background: var(--bg-secondary);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
   color: var(--text-primary);
+  font-weight: 400;
+  line-height: 1.2;
 }
 
-/* 5. LINKS */
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 180ms ease, opacity 180ms ease;
+  transition: color 0.25s ease;
 }
 
 a:hover {
   color: var(--accent-hover);
 }
 
-/* 6. BUTTONS */
+img {
+  max-width: 100%;
+}
+
+
+/* ------------------------------------------
+   3. NAVIGATION BAR
+   ------------------------------------------ */
+
+.navbar {
+  position: relative !important;
+  z-index: 1000;
+
+  background: #090b09 !important;
+  opacity: 1 !important;
+
+  border-bottom: 1px solid var(--border);
+
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.navbar,
+.navbar .container,
+.navbar .navbar-container {
+  background-color: #090b09 !important;
+}
+
+.navbar-brand {
+  color: var(--text-primary) !important;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-secondary) !important;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--border) !important;
+}
+
+.dropdown-menu {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.dropdown-item {
+  color: var(--text-secondary) !important;
+}
+
+.dropdown-item:hover {
+  background: var(--bg-tertiary) !important;
+  color: var(--text-primary) !important;
+}
+
+
+/* ------------------------------------------
+   4. MAIN CONTENT
+   ------------------------------------------ */
+
+#quarto-content main {
+  color: var(--text-primary);
+}
+
+.page-columns {
+  background: var(--bg-primary);
+}
+
+main.content {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+#title-block-header {
+  display: none;
+}
+
+
+/* ------------------------------------------
+   5. HERO SECTION
+   ------------------------------------------ */
+
+.hero-container {
+  position: relative;
+  isolation: isolate;
+
+  width: 100vw;
+  height: 85vh;
+  min-height: 560px;
+
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  overflow: hidden;
+}
+
+/* Quarto wraps the image in a paragraph */
+
+.hero-container > p {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: 50% 50%;
+
+  margin: 0;
+  border-radius: 0;
+}
+
+/* Dark gradient over the photograph */
+
+.hero-container::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15) 0%,
+    rgba(0, 0, 0, 0.12) 40%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* Hero heading and subtitle */
+
+.hero-text {
+  position: absolute;
+  z-index: 2;
+
+  top: 50%;
+  left: 50%;
+
+  width: 90%;
+  max-width: 900px;
+
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.hero-text h1 {
+  color: #ffffff;
+
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 7vw, 6rem);
+
+  font-weight: 400;
+  line-height: 1.1;
+
+  margin: 0 0 1.2rem;
+}
+
+.hero-text p {
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+  letter-spacing: 0.04em;
+
+  margin: 0;
+}
+
+
+/* ------------------------------------------
+   6. INTRODUCTION
+   ------------------------------------------ */
+
+.intro-section {
+  max-width: 850px;
+  margin: 100px auto;
+  padding: 0 25px;
+}
+
+.intro-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.intro-section p {
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+
+/* ------------------------------------------
+   7. EXPLORE SECTION
+   ------------------------------------------ */
+
+.explore-section {
+  margin: 100px auto;
+  padding: 0 25px;
+}
+
+.section-heading {
+  margin-bottom: 35px;
+}
+
+.eyebrow {
+  color: var(--accent);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+
+/* Explore cards grid */
+
+.explore-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 18px;
+  margin: 35px 0;
+}
+
+
+/* Individual cards */
+
+.explore-card {
+  position: relative;
+
+  min-height: 210px;
+  padding: 30px;
+
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.explore-card:hover {
+  background: var(--bg-tertiary);
+  border-color: rgba(182, 197, 169, 0.4);
+
+  transform: translateY(-4px);
+}
+
+.card-number {
+  display: block;
+
+  color: var(--accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+
+  margin-bottom: 20px;
+}
+
+.explore-card h3 {
+  margin: 0 0 12px;
+}
+
+.explore-card p {
+  margin-bottom: 15px;
+}
+
+.explore-card a {
+  font-size: 0.9rem;
+}
+
+
+/* ==========================================
+   MASONRY PHOTOGRAPHY GALLERY
+   ========================================== */
+
+.photo-grid {
+  columns: 3;
+  column-gap: 18px;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.photo-grid > p {
+  display: block !important;
+  width: 100%;
+  margin: 0 0 18px !important;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}
+
+.photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-width: 100%;
+  border-radius: 3px;
+  margin: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-grid img:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .photo-grid {
+    columns: 2;
+    column-gap: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .photo-grid {
+    columns: 2;
+    column-gap: 10px;
+  }
+
+  .photo-grid > p {
+    margin-bottom: 10px !important;
+  }
+}
+/* ------------------------------------------
+   9. CONNECT SECTION
+   ------------------------------------------ */
+
+.connect-section {
+  margin: 100px auto;
+  padding: 60px 25px;
+
+  text-align: center;
+
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.connect-section h2 {
+  margin-top: 0;
+}
+
+.connect-section p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.social-links {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 25px;
+}
+
+.social-links a {
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+.social-links a:hover {
+  color: var(--accent-hover);
+}
+
+
+/* ------------------------------------------
+   10. FOOTER
+   ------------------------------------------ */
+
+.homepage-footer {
+  padding: 30px 20px;
+
+  text-align: center;
+
+  border-top: 1px solid var(--border);
+}
+
+.homepage-footer p,
+.homepage-footer small {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+
+/* ------------------------------------------
+   11. GENERAL BUTTONS
+   ------------------------------------------ */
 
 .btn {
-  border-radius: 999px;
-  padding: 0.75rem 1.5rem;
-  font-family: var(--font-interface);
-  font-size: 0.92rem;
-  font-weight: 500;
-  transition: all 200ms ease;
+  border-radius: 3px;
+  transition: all 0.25s ease;
 }
 
 .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #172016;
+  color: var(--bg-primary);
 }
 
 .btn-primary:hover {
   background: var(--accent-hover);
   border-color: var(--accent-hover);
-  color: #172016;
-  transform: translateY(-2px);
-}
-
-.btn-outline-primary {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.btn-outline-primary:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #172016;
-}
-
-/* 7. IMAGES */
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.quarto-figure img {
-  border-radius: 12px;
-}
-
-figure {
-  margin-bottom: 2rem;
-}
-
-figcaption {
-  color: var(--text-muted);
-  font-size: 0.85rem;
-  margin-top: 0.7rem;
-}
-
-/* 8. CONTENT LAYOUT */
-
-#quarto-content {
-  color: var(--text-primary);
-}
-
-main {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-hr {
-  border-color: var(--border);
-  opacity: 1;
-  margin: 3rem 0;
-}
-
-/* 9. FOOTER */
-
-.nav-footer {
-  background: var(--bg-primary);
-  border-top: 1px solid var(--border);
-  color: var(--text-muted);
-}
-
-/* 10. TEXT SELECTION */
-
-::selection {
-  background: var(--accent);
   color: var(--bg-primary);
 }
 
-/* 11. RESPONSIVE DESIGN */
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: clamp(2.6rem, 11vw, 4rem);
+/* ------------------------------------------
+   12. TABLES AND CODE
+   ------------------------------------------ */
+
+table {
+  color: var(--text-secondary);
+}
+
+th {
+  color: var(--text-primary);
+}
+
+code {
+  color: var(--accent);
+  background: var(--bg-tertiary);
+}
+
+pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+
+/* ------------------------------------------
+   13. RESPONSIVE DESIGN
+   ------------------------------------------ */
+
+/* Tablets */
+
+@media (max-width: 900px) {
+
+  .hero-container {
+    height: 75vh;
+    min-height: 480px;
   }
 
-  h2 {
-    font-size: clamp(2rem, 8vw, 3rem);
+  .explore-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  main {
-    padding-top: 1.5rem;
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
   }
 
-  .navbar {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  .intro-section,
+  .explore-section,
+  .gallery-section {
+    margin-top: 75px;
+    margin-bottom: 75px;
   }
 }
 
-/* 12. ACCESSIBILITY */
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .hero-container {
+    height: 72vh;
+    min-height: 420px;
+  }
+
+  .hero-text {
+    width: 92%;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2.4rem, 10vw, 3.5rem);
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .intro-section,
+  .explore-section,
+  .gallery-section {
+    padding-left: 18px;
+    padding-right: 18px;
+
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .explore-card {
+    min-height: 180px;
+    padding: 24px;
+  }
+
+  .photo-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .connect-section {
+    padding: 45px 18px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+}
+
+
+/* ------------------------------------------
+   14. ACCESSIBILITY
+   ------------------------------------------ */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
 
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
@@ -254,190 +654,6 @@ hr {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
-  }
-}
-
-
-
-/* ==========================================
-   HOMEPAGE DESIGN
-   ========================================== */
-
-/* 1. HOMEPAGE LAYOUT */
-
-body:has(.hero-section) main {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-body:has(.hero-section) #quarto-content {
-  padding: 0;
-}
-
-body:has(.hero-section) .content {
-  max-width: none;
-  padding: 0;
-}
-
-/* 2. CINEMATIC HERO */
-
-.hero-section {
-  width: 100vw;
-  min-height: 100vh;
-  min-height: 100svh;
-  margin-left: calc(50% - 50vw);
-
-  background-image:
-    linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.12),
-      rgba(0, 0, 0, 0.05)
-    ),
-    url("images/homepage/hero-night-sky.jpeg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  position: relative;
-}
-
-/* 3. HOMEPAGE NAVIGATION */
-
-body:has(.hero-section) .navbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
-  background: transparent;
-  border-bottom: 1px solid rgba(255,255,255,0.12);
-  backdrop-filter: none;
-
-  padding: 1rem 2rem;
-  transition: background 300ms ease,
-              backdrop-filter 300ms ease;
-}
-
-/* Navigation after scrolling */
-
-body:has(.hero-section) .navbar.scrolled {
-  background: rgba(9, 11, 9, 0.94);
-  backdrop-filter: blur(18px);
-  border-bottom: 1px solid var(--border);
-  position: fixed;
-}
-
-/* 4. HOMEPAGE SECTIONS */
-
-.intro-section,
-.explore-section,
-.current-section,
-.photography-section,
-.closing-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 7rem 2rem;
-}
-
-.intro-section {
-  max-width: 950px;
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
-.intro-section h2 {
-  margin-bottom: 2rem;
-}
-
-.intro-section p {
-  font-size: 1.12rem;
-  line-height: 1.9;
-}
-
-/* 5. EXPLORE GRID */
-
-.explore-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
-.explore-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 2.5rem;
-  min-height: 220px;
-
-  transition: transform 250ms ease,
-              background 250ms ease,
-              border-color 250ms ease;
-}
-
-.explore-card:hover {
-  transform: translateY(-5px);
-  background: var(--bg-tertiary);
-  border-color: rgba(182,197,169,0.4);
-}
-
-.explore-card h3 {
-  margin-bottom: 1rem;
-}
-
-.explore-card p {
-  font-size: 0.95rem;
-}
-
-/* 6. SECTION SPACING */
-
-.current-section,
-.photography-section {
-  border-top: 1px solid var(--border);
-}
-
-.closing-section {
-  border-top: 1px solid var(--border);
-  text-align: center;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-
-.closing-section p {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* 7. RESPONSIVE DESIGN */
-
-@media (max-width: 768px) {
-
-  .hero-section {
-    min-height: 100svh;
-    background-position: center;
-  }
-
-  body:has(.hero-section) .navbar {
-    padding: 0.8rem 1rem;
-  }
-
-  .intro-section,
-  .explore-section,
-  .current-section,
-  .photography-section,
-  .closing-section {
-    padding: 4rem 1.3rem;
-  }
-
-  .explore-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .explore-card {
-    min-height: 180px;
-    padding: 1.8rem;
+    animation-iteration-count: 1 !important;
   }
 }

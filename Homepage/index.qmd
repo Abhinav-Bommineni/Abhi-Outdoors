@@ -1,104 +1,127 @@
-
 ---
-title: "Abhi's Space"
-page-layout: full
+title: ""
+format:
+  html:
+    title-block: false
 ---
 
-::: {.hero-section}
+::: {.hero-container}
+
+![](hero.jpeg){.hero-image}
+
+::: {.hero-text}
+# Welcome to Abhi's Space
+
+Exploring the natural world, one story at a time.
 :::
-
-::: {.hero-content}
-Curious about the world. Always exploring.
-:::
-
-::: {.scroll-indicator}
-SCROLL TO EXPLORE ↓
-:::
-:::
-
-::: {.intro-section}
-
-## Hello, I'm Abhi.
-
-I'm a student, naturalist, wildlife photographer, musician and an endlessly curious person who loves exploring the world around me.
-
-I'm fascinated by the little details that often go unnoticed, from the ecology of a scrubland to the behaviour of a bird, and the stories hidden in everyday life.
-
-When I'm not out exploring, you might find me with a camera, a guitar, a book, or probably several unfinished projects.
-
-Welcome to my little corner of the internet.
 
 :::
 
-::: {.explore-section}
+## Hi, I'm Abhi!
 
-## Things I spend my time doing.
+I'm a nature photographer, wildlife enthusiast, birdwatcher and writer.
 
-A few different interests, connected by one common thread: curiosity.
+I love photography, ecology, birds, music and running. This website is where I share my photography, essays, field notes, projects and other things that interest me.
+
+It's a little corner of the internet where I document what I discover, what I create and what I learn along the way.
+
+## Explore
+
+A collection of things I observe, create and work on.
 
 ::: {.explore-grid}
 
 ::: {.explore-card}
+<span class="card-number">01</span>
+
 ### Photography
 
-Wildlife, landscapes and little details from the natural world.
+Wildlife, landscapes, birds and moments worth remembering.
 
-[Explore photography →](gallery/index.qmd)
+[Explore photography →](photography.qmd)
 :::
 
 ::: {.explore-card}
+<span class="card-number">02</span>
+
 ### Ecology & Projects
 
-Fieldwork, ecological experiments, observations and ongoing projects.
+Field research, conservation, restoration and ongoing experiments.
 
-[Explore projects →](projects/index.qmd)
+[Explore projects →](projects.qmd)
 :::
 
 ::: {.explore-card}
-### Writing
+<span class="card-number">03</span>
 
-Essays, field notes, reflections and the occasional random thought.
+### Writing & Essays
 
-[Read my writing →](essays/index.qmd)
+Thoughts, observations, stories and occasional ramblings.
+
+[Read my writing →](essays.qmd)
 :::
 
 ::: {.explore-card}
+<span class="card-number">04</span>
+
 ### Nature Education
 
-Resources, activities and ideas for understanding the natural world.
+Learning resources, field guides and things I've learnt along the way.
 
-[Explore resources →](education/index.qmd)
+[Explore resources →](nature-education.qmd)
 :::
 
 :::
+
+## Through the Lens
+
+Some moments from the natural world.
+
+::: {.photo-grid}
+
+![](pic1.jpg)
+
+![](pic2.JPG)
+
+![](pic3.JPG)
+
+![](pic4.JPG)
+
+![](pic5.JPG)
+
+![](pic6.JPG)
+
+![](pic7.JPEG)
+
+![](pic8.JPG)
+
+![](pic9.JPG)
+
+![](pic10.JPG)
+
+![](pic11.JPG)
+
+![](pic12.JPG)
+
+![](pic13.JPG)
+
+![](pic14.JPG)
+
+![](pic15.JPG)
+
+![](pic16.JPG)
+
 :::
 
-::: {.current-section}
+[View the photography collection →](photography.qmd)
+## Let's Stay Connected
 
-## What I'm Currently exploring.
+More photographs, observations and discoveries.
 
-A collection of ongoing projects, experiments and things I'm curious about.
+[Instagram ↗](https://instagram.com/ambitious._.juvenile) ·
+[iNaturalist ↗](https://www.inaturalist.org/people/8840360) ·
+[About me ↗](about.qmd)
 
-[See all projects →](projects/index.qmd)
+---
 
-:::
-
-::: {.photography-section}
-
-## Through the lens.
-
-A few moments, observations and encounters from behind the camera.
-
-[Explore the gallery →](gallery/index.qmd)
-
-:::
-
-::: {.closing-section}
-
-## There's always more to explore.
-
-Thanks for stopping by.
-
-[About me](about.qmd) · [Instagram](https://instagram.com/ambitious._.juvenile) · [iNaturalist](https://www.inaturalist.org/people/8840360)
-
-:::
+<small>© 2026 Abhi's Space · Made with curiosity.</small>

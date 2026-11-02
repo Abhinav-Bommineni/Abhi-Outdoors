@@ -79,7 +79,7 @@ Some moments from the natural world.
 
 ::: {.photo-grid}
 
-![](pic1.jpg)
+![](pic1.JPG)
 
 ![](pic2.JPG)
 
@@ -111,12 +111,16 @@ Some moments from the natural world.
 
 ![](pic16.JPG)
 
+![](pic17.JPG)
+
+
+
 :::
 
 [View the photography collection →](photography.qmd)
+
 ## Let's Stay Connected
 
-More photographs, observations and discoveries.
 
 [Instagram ↗](https://instagram.com/ambitious._.juvenile) ·
 [iNaturalist ↗](https://www.inaturalist.org/people/8840360) ·

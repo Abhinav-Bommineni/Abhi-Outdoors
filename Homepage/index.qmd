@@ -68,7 +68,7 @@ Thoughts, observations, stories and occasional ramblings.
 
 Learning resources, field guides and things I've learnt along the way.
 
-[Explore resources →](nature-education.qmd)
+[Explore resources →](nature-education-index.qmd)
 :::
 
 :::
@@ -117,7 +117,7 @@ Some moments from the natural world.
 
 :::
 
-[View the photography collection →](photography.qmd)
+[View the photography collection →](photography-index.qmd)
 
 ## Let's Stay Connected
 

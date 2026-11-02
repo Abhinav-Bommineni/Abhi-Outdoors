@@ -3,20 +3,21 @@ project:
 
 website:
   title: "Abhi Outdoors"
+  href: homepage/index.qmd
 
   navbar:
     left:
-      - href: index.qmd
+      - href: homepage/index.qmd
         text: Home
-      - href: about.qmd
+      - href: aboutpage/about.qmd
         text: About
-      - href: projects/index.qmd
+      - href: projects/projects.qmd
         text: Projects
-      - href: gallery/index.qmd
+      - href: gallery/photography-index.qmd
         text: Photography
-      - href: essays/index.qmd
+      - href: essays/essays.qmd
         text: Essays & Field Notes
-      - href: education/index.qmd
+      - href: Nature_education/nature-education-index.qmd
         text: Nature Education
       - href: archives/index.qmd
         text: Archives

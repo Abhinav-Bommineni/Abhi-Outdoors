@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Abhi Outdoors"
-  href: homepage/index.qmd
+
 
   navbar:
     left:

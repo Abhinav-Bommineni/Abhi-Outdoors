@@ -1,11 +1,13 @@
-/* =========================================================
+
+/* ==========================================
    ABHI'S SPACE
    Editorial dark design system
-   Clean consolidated stylesheet
-   ========================================================= */
+   ========================================== */
 
 
-/* 1. DESIGN TOKENS */
+/* ------------------------------------------
+   1. DESIGN TOKENS
+   ------------------------------------------ */
 
 :root {
   --bg-primary: #090b09;
@@ -19,14 +21,19 @@
   --accent: #b6c5a9;
   --accent-hover: #d0ddc5;
 
+  --strava-orange: #FC4C02;
+
   --border: rgba(230, 235, 220, 0.13);
 
   --font-heading: Georgia, "Times New Roman", serif;
-  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
 }
 
 
-/* 2. GLOBAL STYLING */
+/* ------------------------------------------
+   2. GLOBAL STYLING
+   ------------------------------------------ */
 
 html {
   scroll-behavior: smooth;
@@ -42,22 +49,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#quarto-content,
-.page-columns {
+#quarto-content {
   background: var(--bg-primary);
-}
-
-#quarto-content main {
-  color: var(--text-primary);
-}
-
-main.content {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-#title-block-header {
-  display: none;
 }
 
 p {
@@ -70,8 +63,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--text-primary);
   font-family: var(--font-heading);
+  color: var(--text-primary);
   font-weight: 400;
   line-height: 1.2;
 }
@@ -81,9 +74,9 @@ h1 {
 }
 
 h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
   margin-top: 3rem;
   margin-bottom: 1rem;
-  font-size: clamp(2rem, 3.5vw, 3rem);
 }
 
 h3 {
@@ -101,12 +94,13 @@ a:hover {
 }
 
 img {
-  display: block;
   max-width: 100%;
 }
 
 
-/* 3. NAVIGATION BAR */
+/* ------------------------------------------
+   3. NAVIGATION BAR
+   ------------------------------------------ */
 
 .navbar {
   position: relative !important;
@@ -162,7 +156,31 @@ img {
 }
 
 
-/* 4. HERO SECTION */
+/* ------------------------------------------
+   4. MAIN CONTENT
+   ------------------------------------------ */
+
+#quarto-content main {
+  color: var(--text-primary);
+}
+
+.page-columns {
+  background: var(--bg-primary);
+}
+
+main.content {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+#title-block-header {
+  display: none;
+}
+
+
+/* ------------------------------------------
+   5. HERO SECTION
+   ------------------------------------------ */
 
 .hero-container {
   position: relative;
@@ -175,7 +193,6 @@ img {
   overflow: hidden;
 }
 
-/* Quarto wraps a standalone image in a paragraph. */
 .hero-container > p {
   position: absolute;
   inset: 0;
@@ -223,23 +240,25 @@ img {
 }
 
 .hero-text h1 {
-  margin: 0 0 1.2rem;
-  color: #fff;
+  color: #ffffff;
   font-family: var(--font-heading);
   font-size: clamp(2.8rem, 7vw, 6rem);
   font-weight: 400;
   line-height: 1.1;
+  margin: 0 0 1.2rem;
 }
 
 .hero-text p {
-  margin: 0;
   color: rgba(255, 255, 255, 0.85);
   font-size: clamp(1rem, 1.7vw, 1.3rem);
   letter-spacing: 0.04em;
+  margin: 0;
 }
 
 
-/* 5. INTRODUCTION AND SECTION SPACING */
+/* ------------------------------------------
+   6. INTRODUCTION
+   ------------------------------------------ */
 
 .intro-section {
   max-width: 850px;
@@ -255,6 +274,11 @@ img {
   font-size: 1.08rem;
   line-height: 1.9;
 }
+
+
+/* ------------------------------------------
+   7. EXPLORE SECTION
+   ------------------------------------------ */
 
 .explore-section {
   margin: 100px auto;
@@ -273,93 +297,42 @@ img {
   text-transform: uppercase;
 }
 
-
-/* 6. EXPLORE WHAT I DO: IMAGE CARDS */
-
 .explore-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
-  margin: 30px 0 35px;
+  margin: 30px 0;
 }
 
 .explore-card {
   position: relative;
   display: block;
-  min-width: 0;
   min-height: 300px;
   overflow: hidden;
-  isolation: isolate;
-  border: 1px solid var(--border);
   border-radius: 14px;
-  background-color: var(--bg-secondary);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   text-decoration: none !important;
-  transform: translateY(0);
-  transition:
-    transform 0.35s ease,
-    border-color 0.35s ease;
-}
-
-/* Exact filenames used by index.qmd. */
-.card-photography {
-  background-image: url("card-photography.jpg");
-}
-
-.card-ecology {
-  background-image: url("card-ecology.jpg");
-}
-
-.card-writing {
-  background-image: url("card-writing.jpeg");
-}
-
-.card-education {
-  background-image: url("card-education.jpg");
-}
-
-/* The image sits on its own layer so it can zoom independently. */
-.explore-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-image: inherit;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: scale(1);
-  filter: brightness(0.88);
-  transition:
-    transform 0.55s ease,
-    filter 0.55s ease;
-}
-
-/* A permanent gradient keeps text readable. */
-.explore-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.88) 0%,
-    rgba(0, 0, 0, 0.38) 48%,
-    rgba(0, 0, 0, 0.08) 100%
-  );
-  pointer-events: none;
+  isolation: isolate;
+  transition: transform 0.35s ease;
 }
 
 .explore-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(182, 197, 169, 0.45);
+}
+
+.explore-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  transition: background 0.4s ease;
+  z-index: 1;
 }
 
 .explore-card:hover::before {
-  transform: scale(1.07);
-  filter: brightness(0.68);
+  background: rgba(0, 0, 0, 0.48);
 }
 
 .card-overlay {
@@ -370,37 +343,62 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
-  min-height: 100%;
   padding: 28px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88),
+    rgba(0, 0, 0, 0.15)
+  );
 }
 
+.card-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.card-content h3,
 .card-overlay h3 {
-  margin: 0 0 8px;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.55rem;
   font-weight: 600;
+  margin: 0 0 8px;
 }
 
+.card-content p,
 .card-overlay p {
-  margin: 0 0 14px;
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
+  margin: 0 0 14px;
 }
 
+.card-content span,
 .card-overlay a {
   color: #d4d8c8;
   font-size: 0.85rem;
   font-weight: 600;
-  text-decoration: none;
 }
 
-.card-overlay a:hover {
-  color: #fff;
+.card-photography {
+  background-image: url("card-photography.jpg");
+}
+
+.card-ecology {
+  background-image: url("card-ecology.jpg");
+}
+
+.card-writing {
+  background-image: url("card-writing.jpg");
+}
+
+.card-education {
+  background-image: url("card-education.jpeg");
 }
 
 
-/* 7. PHOTOGRAPHY GALLERY */
+/* ------------------------------------------
+   8. PHOTOGRAPHY GALLERY
+   ------------------------------------------ */
 
 .photo-grid {
   columns: 3;
@@ -422,8 +420,8 @@ img {
   width: 100%;
   height: auto !important;
   max-width: 100%;
-  margin: 0;
   border-radius: 3px;
+  margin: 0;
   transition: opacity 0.3s ease;
 }
 
@@ -432,7 +430,9 @@ img {
 }
 
 
-/* 8. CONNECT SECTION */
+/* ------------------------------------------
+   9. CONNECT SECTION
+   ------------------------------------------ */
 
 .connect-section {
   margin: 100px auto;
@@ -470,7 +470,9 @@ img {
 }
 
 
-/* 9. FOOTER */
+/* ------------------------------------------
+   10. FOOTER
+   ------------------------------------------ */
 
 .homepage-footer {
   padding: 30px 20px;
@@ -485,7 +487,9 @@ img {
 }
 
 
-/* 10. BUTTONS */
+/* ------------------------------------------
+   11. GENERAL BUTTONS
+   ------------------------------------------ */
 
 .btn {
   border-radius: 3px;
@@ -505,7 +509,9 @@ img {
 }
 
 
-/* 11. TABLES AND CODE */
+/* ------------------------------------------
+   12. TABLES AND CODE
+   ------------------------------------------ */
 
 table {
   color: var(--text-secondary);
@@ -527,12 +533,280 @@ pre {
 }
 
 
-/* 12. RESPONSIVE DESIGN: TABLETS */
+/* ==========================================
+   13. ABOUT PAGE: FULLSCREEN INTERACTIVE MAP
+   ========================================== */
+
+/*
+  The map is fixed to the browser viewport.
+  Only the About page is prevented from scrolling.
+*/
+
+body:has(.about-map) {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  height: 100vh;
+  height: 100dvh;
+}
+
+body:has(.about-map) #quarto-content,
+body:has(.about-map) main,
+body:has(.about-map) main.content,
+body:has(.about-map) .page-columns {
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: none !important;
+  width: 100% !important;
+}
+
+body:has(.about-map) .about-map {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 0;
+  transform: none;
+}
+
+
+/* Topographic background */
+
+.about-map .map-background {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+}
+
+
+/* Central introduction box */
+
+.map-centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(420px, 76vw);
+  max-height: 65vh;
+  overflow-y: auto;
+  padding: 32px;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(9, 15, 11, 0.90);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.centre-label,
+.centre-footer {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #a6b69e;
+}
+
+.centre-dot {
+  display: none;
+}
+
+.map-centre h1,
+.map-centre h2 {
+  color: #f1efe7;
+  margin: 18px 0;
+}
+
+.map-centre p {
+  color: #c0c5bb;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.centre-footer {
+  margin-top: 24px;
+}
+
+#centre-content {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+#centre-content h1 {
+  max-width: 100%;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+
+/* Map markers */
+
+.map-marker {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  color: #f1efe7;
+  cursor: pointer;
+
+  /* Position the centre of each button at its coordinates */
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.marker-symbol {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--strava-orange);
+  border-radius: 50%;
+  background: var(--strava-orange);
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: 0 0 18px rgba(252, 76, 2, 0.45);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.map-marker:hover .marker-symbol {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(252, 76, 2, 0.75);
+}
+
+.marker-label {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: #e1e1e1;
+  text-shadow: 0 2px 5px #000;
+}
+
+
+/* Individual marker positions */
+
+.marker-birds {
+  top: 23%;
+  left: 17%;
+}
+
+.marker-photo {
+  top: 23%;
+  left: 82%;
+}
+
+.marker-ecology {
+  top: 72%;
+  left: 17%;
+}
+
+.marker-running {
+  top: 75%;
+  left: 81%;
+}
+
+.marker-music {
+  top: 48%;
+  left: 91%;
+}
+
+.marker-exploring {
+  top: 87%;
+  left: 48%;
+}
+
+.marker-writing {
+  top: 43%;
+  left: 9%;
+}
+
+.marker-about {
+  top: 20%;
+  left: 50%;
+}
+
+
+/* Old information panel, retained if needed */
+
+.interest-panel {
+  position: absolute;
+  z-index: 5;
+  right: 3%;
+  bottom: 4%;
+  width: min(320px, 85%);
+  padding: 24px;
+  background: rgba(9, 15, 11, 0.95);
+  border: 1px solid rgba(198, 211, 173, 0.4);
+  border-radius: 12px;
+  color: #f1efe7;
+}
+
+.interest-panel[hidden] {
+  display: none;
+}
+
+.panel-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #f1efe7;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.panel-eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #a6b69e;
+}
+
+.interest-panel h3 {
+  margin: 14px 0 8px;
+}
+
+.interest-panel p {
+  color: #c0c5bb;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+
+
+/* ------------------------------------------
+   14. RESPONSIVE DESIGN
+   ------------------------------------------ */
+
+/* Tablets */
 
 @media (max-width: 900px) {
+
   .hero-container {
     height: 75vh;
     min-height: 480px;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .photo-grid {
@@ -546,27 +820,22 @@ pre {
     margin-top: 75px;
     margin-bottom: 75px;
   }
-}
 
-
-/* 13. RESPONSIVE DESIGN: MOBILE */
-
-@media (max-width: 700px) {
-  .explore-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+  .map-centre {
+    width: min(380px, 65vw);
+    padding: 25px;
   }
 
-  .explore-card {
-    min-height: 240px;
-  }
-
-  .card-overlay {
-    padding: 24px;
+  .marker-music {
+    left: 91%;
   }
 }
+
+
+/* Mobile */
 
 @media (max-width: 550px) {
+
   body {
     font-size: 15px;
   }
@@ -597,6 +866,15 @@ pre {
     margin-bottom: 65px;
   }
 
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .explore-card {
+    min-height: 240px;
+  }
+
   .photo-grid {
     columns: 2;
     column-gap: 10px;
@@ -613,10 +891,95 @@ pre {
   .social-links {
     gap: 15px;
   }
+
+  /* About map mobile layout */
+
+  .map-centre {
+    top: 51%;
+    width: 68vw;
+    max-height: 55vh;
+    padding: 17px;
+  }
+
+  .map-centre h1 {
+    font-size: 23px;
+  }
+
+  .map-centre p {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .centre-label,
+  .centre-footer {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+
+  .centre-footer {
+    margin-top: 14px;
+  }
+
+  .map-marker {
+    gap: 4px;
+    padding: 5px;
+  }
+
+  .marker-symbol {
+    width: 34px;
+    height: 34px;
+    font-size: 17px;
+  }
+
+  .marker-label {
+    font-size: 10px;
+  }
+
+  .marker-birds {
+    top: 23%;
+    left: 15%;
+  }
+
+  .marker-photo {
+    top: 23%;
+    left: 85%;
+  }
+
+  .marker-ecology {
+    top: 76%;
+    left: 15%;
+  }
+
+  .marker-running {
+    top: 76%;
+    left: 85%;
+  }
+
+  .marker-music {
+    top: 48%;
+    left: 92%;
+  }
+
+  .marker-exploring {
+    top: 90%;
+    left: 50%;
+  }
+
+  .marker-writing {
+    top: 46%;
+    left: 8%;
+  }
+
+  .marker-about {
+    top: 0%;
+    left: 50%;
+  }
 }
 
 
-/* 14. ACCESSIBILITY */
+/* ------------------------------------------
+   15. ACCESSIBILITY
+   ------------------------------------------ */
 
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -624,6 +987,7 @@ pre {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   html {
     scroll-behavior: auto;
   }
@@ -635,4 +999,57 @@ pre {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}
+
+/* FIX MARKER CLICKABILITY */
+
+.about-map .map-background {
+  pointer-events: none;
+}
+
+.about-map .map-connections {
+  pointer-events: none;
+}
+
+.about-map .map-marker {
+  position: absolute;
+  z-index: 20;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.about-map .map-centre {
+  z-index: 10;
+}
+
+/* Keep the About map content inside its central box */
+
+.map-centre {
+
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#centre-content {
+ 
+  padding-bottom: 8px;
+}
+
+.map-explore-button {
+  position: relative;
+  z-index: 11;
+}
+
+/* Wider About map information box */
+
+.map-centre {
+  width: min(560px, 46vw);
+  max-width: 560px;
+  padding: 38px 42px;
+  overflow: visible;
+}
+
+#centre-content {
+  max-height: none;
+  overflow: visible;
 }

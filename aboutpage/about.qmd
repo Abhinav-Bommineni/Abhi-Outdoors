@@ -1,33 +1,79 @@
-
 ---
-title: "A little about me"
----
-
-I'm Abhi, a student, wildlife photographer, naturalist, musician, and a few other things that don't fit neatly into a single box.
-
-I spend a lot of my time at Farmhill, where I'm learning about the natural world by actually getting out into it. I'm interested in ecology, birds, and the small, often overlooked details of the landscapes around me.
-
-Lately, that's meant spending time observing wildlife, documenting biodiversity, and exploring ideas around ecological restoration.
-
-
-Photography is a big part of this. I like being able to spend time with a subject, understand it a little better, and come away with a photograph that tells some part of its story.
-
-I'm particularly drawn to birds and wildlife, although I'm just as likely to photograph an interesting landscape or some tiny detail I happened to notice.
-
-Outside the field, I play guitar and drums, write music, run, trek, and occasionally get carried away with an entirely unrelated interest.
-
-I like learning things, making things, and figuring out how things work. Sometimes that leads somewhere useful. Sometimes it leads to twenty open browser tabs and a new project I probably didn't need to start.
-
-## Why this website exists
-
-This website is a place to put some of that work.
-
-You'll find my photographs, field notes, ecological projects, writing, and other things I feel like sharing. It's not intended to be a perfectly curated record of everything I've done.
-
-I'd rather it grow with me, reflect what I'm learning, and leave room for things I haven't discovered yet.
-
-Have a look around.
-
+title: ""
+format:
+  html:
+    title-block: false
 ---
 
-[Instagram](https://instagram.com/ambitious._.juvenile) · [iNaturalist](https://www.inaturalist.org/people/8840360) · [Email](mailto:abhinav336698@gmail.com)
+::: {.about-map}
+
+![](about-map.jpg){.map-background}
+
+::: {.map-centre}
+
+<span class="centre-label">YOU ARE HERE</span>
+
+<div id="centre-content">
+
+
+# A little about me.
+
+I'm Abhi. A student, wildlife photographer, naturalist, musician, runner and a few other things that don't fit neatly into a single box.
+
+I spend much of my time learning about the natural world, making things, exploring new interests and figuring out how everything works.
+
+</div>
+
+<span class="centre-footer">SELECT A DESTINATION TO EXPLORE</span>
+
+:::
+
+<button class="map-marker marker-birds" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Birdwatching</span>
+</button>
+
+<button class="map-marker marker-photo" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Photography</span>
+</button>
+
+<button class="map-marker marker-ecology" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Ecology</span>
+</button>
+
+<button class="map-marker marker-running" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Running</span>
+</button>
+
+<button class="map-marker marker-music" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Music</span>
+</button>
+
+<button class="map-marker marker-about" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">About me</span>
+</button>
+
+<button class="map-marker marker-exploring" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Exploring</span>
+</button>
+
+<button class="map-marker marker-writing" type="button">
+  <span class="marker-symbol">✳</span>
+  <span class="marker-label">Writing</span>
+</button>
+
+<div class="interest-panel" id="interest-panel" hidden>
+  <button class="panel-close" id="panel-close" type="button">&times;</button>
+  <span class="panel-eyebrow">A DESTINATION ON THE MAP</span>
+  <h3 id="panel-title"></h3>
+  <p id="panel-description"></p>
+</div>
+:::
+
+<script src="about.js"></script>

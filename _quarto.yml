@@ -1,33 +1,38 @@
+
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "Abhi Outdoors"
 
-
   navbar:
+    title: "Abhi Outdoors"
+    logo-href: homepage/index.qmd
     left:
-      - href: homepage/index.qmd
+      - href: homepage/index.html
         text: Home
-      - href: aboutpage/about.qmd
+
+      - href: aboutpage/about.html
         text: About
-      - href: projects/projects.qmd
+
+      - href: projects/projects.html
         text: Projects
-      - href: gallery/photography-index.qmd
+
+      - href: gallery/photography-index.html
         text: Photography
-      - href: essays/essays.qmd
+
+      - href: essays/essays.html
         text: Essays & Field Notes
-      - href: Nature_education/nature-education-index.qmd
+
+      - href: Nature_education/nature-education-index.html
         text: Nature Education
-      - href: archives/index.qmd
+
+      - href: archives/index.html
         text: Archives
 
 format:
   html:
     theme: darkly
     css: styles.css
-
-
-
-
-    
+    title-block: false

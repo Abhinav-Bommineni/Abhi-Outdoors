@@ -1,3 +1,4 @@
+
 ---
 title: ""
 format:
@@ -10,9 +11,11 @@ format:
 ![](hero.jpeg){.hero-image}
 
 ::: {.hero-text}
+
 # Welcome to Abhi's Space
 
 Exploring the natural world, one story at a time.
+
 :::
 
 :::
@@ -21,61 +24,60 @@ Exploring the natural world, one story at a time.
 
 I'm a nature photographer, wildlife enthusiast, birdwatcher and writer.
 
-I love photography, ecology, birds, music and running. This website is where I share my photography, essays, field notes, projects and other things that interest me.
+I love photography, ecology, birds, music, and exploring the world around me. This is a space where I document the things I discover, the projects I work on, and the stories I collect along the way.
 
-It's a little corner of the internet where I document what I discover, what I create and what I learn along the way.
-
-## Explore
-
-A collection of things I observe, create and work on.
+## Explore What I Do
 
 ::: {.explore-grid}
 
-::: {.explore-card}
-<span class="card-number">01</span>
+::: {.explore-card .card-photography}
 
+::: {.card-overlay}
 ### Photography
 
-Wildlife, landscapes, birds and moments worth remembering.
+Through the lens of the natural world.
 
-[Explore photography →](photography.qmd)
+[Explore →](gallery/index.qmd)
+:::
 :::
 
-::: {.explore-card}
-<span class="card-number">02</span>
+::: {.explore-card .card-ecology}
 
+::: {.card-overlay}
 ### Ecology & Projects
 
-Field research, conservation, restoration and ongoing experiments.
+Fieldwork, conservation and things growing.
 
-[Explore projects →](projects.qmd)
+[Explore →](projects/index.qmd)
+:::
 :::
 
-::: {.explore-card}
-<span class="card-number">03</span>
+::: {.explore-card .card-writing}
 
+::: {.card-overlay}
 ### Writing & Essays
 
-Thoughts, observations, stories and occasional ramblings.
+Thoughts, stories and observations.
 
-[Read my writing →](essays.qmd)
+[Explore →](essays/index.qmd)
+:::
 :::
 
-::: {.explore-card}
-<span class="card-number">04</span>
+::: {.explore-card .card-education}
 
+::: {.card-overlay}
 ### Nature Education
 
-Learning resources, field guides and things I've learnt along the way.
+Learning about the natural world.
 
-[Explore resources →](nature-education-index.qmd)
+[Explore →](education/index.qmd)
+:::
 :::
 
 :::
-
 ## Through the Lens
 
-Some moments from the natural world.
+A collection of moments from the natural world.
 
 ::: {.photo-grid}
 
@@ -97,35 +99,30 @@ Some moments from the natural world.
 
 ![](pic9.jpg)
 
-![](pic10.JPG)
+![](pic10.jpg)
 
 ![](pic11.JPG)
 
 ![](pic12.JPG)
 
-![](pic13.JPG)
 
-![](pic14.JPG)
-
-![](pic15.jpg)
-
-![](pic16.JPG)
-
-![](pic17.JPG)
 
 
 
 :::
 
-[View the photography collection →](photography-index.qmd)
+[Explore the photography gallery →](gallery/index.qmd)
 
-## Let's Stay Connected
+## Let's Connect
 
+You can find more of my work and follow along elsewhere.
 
-[Instagram ↗](https://instagram.com/ambitious._.juvenile) ·
-[iNaturalist ↗](https://www.inaturalist.org/people/8840360) ·
-[About me ↗](about.qmd)
+[Instagram](https://www.instagram.com/ambitious._.juvenile/)
+
+[iNaturalist](https://www.inaturalist.org/people/8840360)
+
+[About Me](about.qmd)
 
 ---
 
-<small>© 2026 Abhi's Space · Made with curiosity.</small>
+© 2026 Abhi's Space. Built with curiosity.

@@ -1,12 +1,11 @@
-/* ==========================================
+/* =========================================================
    ABHI'S SPACE
    Editorial dark design system
-   ========================================== */
+   Clean consolidated stylesheet
+   ========================================================= */
 
 
-/* ------------------------------------------
-   1. DESIGN TOKENS
-   ------------------------------------------ */
+/* 1. DESIGN TOKENS */
 
 :root {
   --bg-primary: #090b09;
@@ -23,14 +22,11 @@
   --border: rgba(230, 235, 220, 0.13);
 
   --font-heading: Georgia, "Times New Roman", serif;
-  --font-body: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 
-/* ------------------------------------------
-   2. GLOBAL STYLING
-   ------------------------------------------ */
+/* 2. GLOBAL STYLING */
 
 html {
   scroll-behavior: smooth;
@@ -46,8 +42,22 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-#quarto-content {
+#quarto-content,
+.page-columns {
   background: var(--bg-primary);
+}
+
+#quarto-content main {
+  color: var(--text-primary);
+}
+
+main.content {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+#title-block-header {
+  display: none;
 }
 
 p {
@@ -60,8 +70,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
   color: var(--text-primary);
+  font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.2;
 }
@@ -71,9 +81,9 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2rem, 3.5vw, 3rem);
   margin-top: 3rem;
   margin-bottom: 1rem;
+  font-size: clamp(2rem, 3.5vw, 3rem);
 }
 
 h3 {
@@ -91,23 +101,19 @@ a:hover {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
 
-/* ------------------------------------------
-   3. NAVIGATION BAR
-   ------------------------------------------ */
+/* 3. NAVIGATION BAR */
 
 .navbar {
   position: relative !important;
   z-index: 1000;
-
   background: #090b09 !important;
   opacity: 1 !important;
-
   border-bottom: 1px solid var(--border);
-
   box-shadow: none !important;
   backdrop-filter: none !important;
 }
@@ -156,55 +162,25 @@ img {
 }
 
 
-/* ------------------------------------------
-   4. MAIN CONTENT
-   ------------------------------------------ */
-
-#quarto-content main {
-  color: var(--text-primary);
-}
-
-.page-columns {
-  background: var(--bg-primary);
-}
-
-main.content {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-#title-block-header {
-  display: none;
-}
-
-
-/* ------------------------------------------
-   5. HERO SECTION
-   ------------------------------------------ */
+/* 4. HERO SECTION */
 
 .hero-container {
   position: relative;
   isolation: isolate;
-
   width: 100vw;
   height: 85vh;
   min-height: 560px;
-
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-
   overflow: hidden;
 }
 
-/* Quarto wraps the image in a paragraph */
-
+/* Quarto wraps a standalone image in a paragraph. */
 .hero-container > p {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   margin: 0;
   padding: 0;
 }
@@ -212,79 +188,58 @@ main.content {
 .hero-image {
   position: absolute;
   inset: 0;
-
   display: block;
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   object-position: 50% 50%;
-
   margin: 0;
   border-radius: 0;
 }
 
-/* Dark gradient over the photograph */
-
 .hero-container::after {
   content: "";
-
   position: absolute;
   inset: 0;
   z-index: 1;
-
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.15) 0%,
     rgba(0, 0, 0, 0.12) 40%,
     rgba(0, 0, 0, 0.65) 100%
   );
-
   pointer-events: none;
 }
-
-/* Hero heading and subtitle */
 
 .hero-text {
   position: absolute;
   z-index: 2;
-
   top: 50%;
   left: 50%;
-
   width: 90%;
   max-width: 900px;
-
   transform: translate(-50%, -50%);
-
   text-align: center;
 }
 
 .hero-text h1 {
-  color: #ffffff;
-
+  margin: 0 0 1.2rem;
+  color: #fff;
   font-family: var(--font-heading);
   font-size: clamp(2.8rem, 7vw, 6rem);
-
   font-weight: 400;
   line-height: 1.1;
-
-  margin: 0 0 1.2rem;
 }
 
 .hero-text p {
+  margin: 0;
   color: rgba(255, 255, 255, 0.85);
-
   font-size: clamp(1rem, 1.7vw, 1.3rem);
   letter-spacing: 0.04em;
-
-  margin: 0;
 }
 
 
-/* ------------------------------------------
-   6. INTRODUCTION
-   ------------------------------------------ */
+/* 5. INTRODUCTION AND SECTION SPACING */
 
 .intro-section {
   max-width: 850px;
@@ -301,11 +256,6 @@ main.content {
   line-height: 1.9;
 }
 
-
-/* ------------------------------------------
-   7. EXPLORE SECTION
-   ------------------------------------------ */
-
 .explore-section {
   margin: 100px auto;
   padding: 0 25px;
@@ -317,7 +267,6 @@ main.content {
 
 .eyebrow {
   color: var(--accent);
-
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -325,68 +274,133 @@ main.content {
 }
 
 
-/* Explore cards grid */
+/* 6. EXPLORE WHAT I DO: IMAGE CARDS */
 
 .explore-grid {
   display: grid;
-
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
-  gap: 18px;
-  margin: 35px 0;
+  gap: 22px;
+  margin: 30px 0 35px;
 }
-
-
-/* Individual cards */
 
 .explore-card {
   position: relative;
-
-  min-height: 210px;
-  padding: 30px;
-
-  background: var(--bg-secondary);
+  display: block;
+  min-width: 0;
+  min-height: 300px;
+  overflow: hidden;
+  isolation: isolate;
   border: 1px solid var(--border);
-
+  border-radius: 14px;
+  background-color: var(--bg-secondary);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none !important;
+  transform: translateY(0);
   transition:
-    background 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.3s ease;
+    transform 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Exact filenames used by index.qmd. */
+.card-photography {
+  background-image: url("card-photography.jpg");
+}
+
+.card-ecology {
+  background-image: url("card-ecology.jpg");
+}
+
+.card-writing {
+  background-image: url("card-writing.jpeg");
+}
+
+.card-education {
+  background-image: url("card-education.jpg");
+}
+
+/* The image sits on its own layer so it can zoom independently. */
+.explore-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1);
+  filter: brightness(0.88);
+  transition:
+    transform 0.55s ease,
+    filter 0.55s ease;
+}
+
+/* A permanent gradient keeps text readable. */
+.explore-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.88) 0%,
+    rgba(0, 0, 0, 0.38) 48%,
+    rgba(0, 0, 0, 0.08) 100%
+  );
+  pointer-events: none;
 }
 
 .explore-card:hover {
-  background: var(--bg-tertiary);
-  border-color: rgba(182, 197, 169, 0.4);
-
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  border-color: rgba(182, 197, 169, 0.45);
 }
 
-.card-number {
-  display: block;
-
-  color: var(--accent);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-
-  margin-bottom: 20px;
+.explore-card:hover::before {
+  transform: scale(1.07);
+  filter: brightness(0.68);
 }
 
-.explore-card h3 {
-  margin: 0 0 12px;
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 100%;
+  padding: 28px;
 }
 
-.explore-card p {
-  margin-bottom: 15px;
+.card-overlay h3 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 1.55rem;
+  font-weight: 600;
 }
 
-.explore-card a {
-  font-size: 0.9rem;
+.card-overlay p {
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+}
+
+.card-overlay a {
+  color: #d4d8c8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.card-overlay a:hover {
+  color: #fff;
 }
 
 
-/* ==========================================
-   MASONRY PHOTOGRAPHY GALLERY
-   ========================================== */
+/* 7. PHOTOGRAPHY GALLERY */
 
 .photo-grid {
   columns: 3;
@@ -408,8 +422,8 @@ main.content {
   width: 100%;
   height: auto !important;
   max-width: 100%;
-  border-radius: 3px;
   margin: 0;
+  border-radius: 3px;
   transition: opacity 0.3s ease;
 }
 
@@ -417,33 +431,13 @@ main.content {
   opacity: 0.85;
 }
 
-@media (max-width: 900px) {
-  .photo-grid {
-    columns: 2;
-    column-gap: 14px;
-  }
-}
 
-@media (max-width: 550px) {
-  .photo-grid {
-    columns: 2;
-    column-gap: 10px;
-  }
-
-  .photo-grid > p {
-    margin-bottom: 10px !important;
-  }
-}
-/* ------------------------------------------
-   9. CONNECT SECTION
-   ------------------------------------------ */
+/* 8. CONNECT SECTION */
 
 .connect-section {
   margin: 100px auto;
   padding: 60px 25px;
-
   text-align: center;
-
   background: var(--bg-secondary);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -460,11 +454,9 @@ main.content {
 
 .social-links {
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
   gap: 25px;
 }
 
@@ -478,15 +470,11 @@ main.content {
 }
 
 
-/* ------------------------------------------
-   10. FOOTER
-   ------------------------------------------ */
+/* 9. FOOTER */
 
 .homepage-footer {
   padding: 30px 20px;
-
   text-align: center;
-
   border-top: 1px solid var(--border);
 }
 
@@ -497,9 +485,7 @@ main.content {
 }
 
 
-/* ------------------------------------------
-   11. GENERAL BUTTONS
-   ------------------------------------------ */
+/* 10. BUTTONS */
 
 .btn {
   border-radius: 3px;
@@ -519,9 +505,7 @@ main.content {
 }
 
 
-/* ------------------------------------------
-   12. TABLES AND CODE
-   ------------------------------------------ */
+/* 11. TABLES AND CODE */
 
 table {
   color: var(--text-secondary);
@@ -543,26 +527,17 @@ pre {
 }
 
 
-/* ------------------------------------------
-   13. RESPONSIVE DESIGN
-   ------------------------------------------ */
-
-/* Tablets */
+/* 12. RESPONSIVE DESIGN: TABLETS */
 
 @media (max-width: 900px) {
-
   .hero-container {
     height: 75vh;
     min-height: 480px;
   }
 
-  .explore-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .photo-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px;
+    columns: 2;
+    column-gap: 14px;
   }
 
   .intro-section,
@@ -574,10 +549,24 @@ pre {
 }
 
 
-/* Mobile */
+/* 13. RESPONSIVE DESIGN: MOBILE */
+
+@media (max-width: 700px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .explore-card {
+    min-height: 240px;
+  }
+
+  .card-overlay {
+    padding: 24px;
+  }
+}
 
 @media (max-width: 550px) {
-
   body {
     font-size: 15px;
   }
@@ -604,24 +593,17 @@ pre {
   .gallery-section {
     padding-left: 18px;
     padding-right: 18px;
-
     margin-top: 65px;
     margin-bottom: 65px;
   }
 
-  .explore-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .explore-card {
-    min-height: 180px;
-    padding: 24px;
-  }
-
   .photo-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
+    columns: 2;
+    column-gap: 10px;
+  }
+
+  .photo-grid > p {
+    margin-bottom: 10px !important;
   }
 
   .connect-section {
@@ -634,9 +616,7 @@ pre {
 }
 
 
-/* ------------------------------------------
-   14. ACCESSIBILITY
-   ------------------------------------------ */
+/* 14. ACCESSIBILITY */
 
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -644,7 +624,6 @@ pre {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   html {
     scroll-behavior: auto;
   }

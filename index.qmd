@@ -8,7 +8,7 @@ format:
 
 ::: {.hero-container}
 
-![](hero.jpeg){.hero-image}
+![](Homepage/hero.jpeg){.hero-image}
 
 ::: {.hero-text}
 
@@ -81,29 +81,30 @@ A collection of moments from the natural world.
 
 ::: {.photo-grid}
 
-![](pic1.jpg)
+![](Homepage/pic1.jpg)
 
-![](pic2.JPG)
+![](Homepage/pic2.jpg)
 
-![](pic3.JPG)
+![](Homepage/pic3.jpg)
 
-![](pic4.JPG)
+![](Homepage/pic4.jpg)
 
-![](pic5.JPG)
+![](Homepage/pic5.jpg)
 
-![](pic6.JPG)
+![](Homepage/pic6.jpg)
 
-![](pic7.jpeg)
+![](Homepage/pic7.jpeg)
 
-![](pic8.jpg)
+![](Homepage/pic8.jpg)
 
-![](pic9.jpg)
+![](Homepage/pic9.jpg)
 
-![](pic10.JPG)
+![](Homepage/pic10.jpg)
 
-![](pic11.JPG)
+![](Homepage/pic11.jpg)
 
-![](pic12.JPG)
+![](Homepage/pic12.jpg)
+
 
 
 

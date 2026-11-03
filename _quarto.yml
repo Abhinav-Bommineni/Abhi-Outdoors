@@ -2,18 +2,18 @@
 project:
   type: website
   output-dir: _site
-
+  resources:
+    - "Homepage/**"
 website:
   title: "Abhi Outdoors"
 
   navbar:
     title: "Abhi Outdoors"
-    logo-href: homepage/index.qmd
+    logo-href: index.qmd
     left:
-      - href: homepage/index.html
+      - href: index.qmd
         text: Home
-
-      - href: aboutpage/about.html
+      - href: aboutpage/about.qmd
         text: About
 
       - href: projects/projects.html

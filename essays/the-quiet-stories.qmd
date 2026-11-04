@@ -1,0 +1,24 @@
+---
+title: "The Quiet Stories of the Natural World"
+subtitle: "Learning to notice the details around us"
+author: "Abhi"
+date: "2026-11-04"
+categories:
+  - Landscapes
+  - Reflections
+image: "../Gallery/images/landscapes/rolling-hills.jpg"
+---
+
+<!-- Introduction -->
+
+Write your opening paragraph here.
+
+<!-- Main essay -->
+
+## A world worth noticing
+
+Begin your essay here.
+
+## Looking closer
+
+Continue writing here.

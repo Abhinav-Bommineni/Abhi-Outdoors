@@ -22,7 +22,7 @@ website:
       - href: gallery/photography-index.html
         text: Photography
 
-      - href: essays/essays.html
+      - href: essays/essays.qmd
         text: Essays & Field Notes
 
       - href: Nature_education/nature-education-index.html

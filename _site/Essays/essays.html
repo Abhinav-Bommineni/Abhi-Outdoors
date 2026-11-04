@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Photography</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../essays/essays.html"> 
+    <a class="nav-link active" href="../essays/essays.html" aria-current="page"> 
 <span class="menu-text">Essays &amp; Field Notes</span></a>
   </li>  
   <li class="nav-item">
@@ -141,14 +141,128 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="essays-field-notes" class="level1">
-<h1>Essays &amp; Field Notes</h1>
-<p>Writing about ecology, field observations, conservation, and the relationships between people and nature.</p>
+<div class="essays-hero">
+<p><img src="nanda-devi-hero.jpg" class="essays-hero-image" alt="Nanda Devi illuminated by the morning sun"></p>
+<div class="essays-hero-overlay">
 
-
+</div>
+<div class="essays-hero-content">
+<span class="essays-eyebrow">ABHI’S SPACE / JOURNAL</span>
+<h1>
+Essays &amp;<br>Field Notes
+</h1>
+<p>
+Stories, observations and perspectives on the natural world.
+</p>
+<p><a href="#writing" class="essays-explore">EXPLORE WRITING <span>↗</span></a></p>
+</div>
+</div>
+<section id="writing" class="journal-intro">
+<div class="journal-intro-inner">
+<div class="journal-intro-label">
+THE JOURNAL
+</div>
+<h2 class="anchored">
+Observations from<br>the natural world.
+</h2>
+<p class="journal-intro-description">
+A collection of stories, field observations and reflections on ecology, wildlife, conservation and our relationship with the natural world. From the quiet details of a forest floor to the larger questions shaping our planet, these are notes from a life spent exploring.
+</p>
+<div class="journal-intro-bottom">
+<p><span>ESSAYS · FIELD NOTES · PERSPECTIVES</span> <span>01 / THE JOURNAL</span></p>
+</div>
+</div>
 </section>
+<section class="featured-story">
+<div class="featured-story-inner">
+<div class="featured-story-content">
+<p><span class="featured-story-label">FEATURED</span></p>
+<p><span class="featured-story-category">LANDSCAPES · REFLECTIONS</span></p>
+<h2 class="anchored">
+The quiet stories of the natural world.
+</h2>
+<p>
+A closer look at the landscapes, ecosystems and relationships that shape the places around us.
+</p>
+<div class="essay-card-wrapper">
+<p><a href="the-quiet-stories.html" class="essay-card" data-category="reflections"> READ THE ESSAY ↗ </a></p>
+</div>
+<div class="featured-story-image">
+<p><img src="../Gallery/images/landscapes/rolling-hills.jpg" alt="Rolling hills beneath an expansive sky"></p>
+</div>
+</div>
+</div></section>
 
-</main> <!-- /main -->
+<section class="essay-archive">
+  <div class="essay-archive-header">
+    <div>
+      <span class="archive-label">THE COLLECTION</span>
+      <h2 class="anchored">More to explore.</h2>
+    </div>
+    <p>Essays, observations and field notes from the natural world.</p>
+  </div>
+<div class="essay-filters">
+  <button class="essay-filter active" data-filter="all">ALL</button>
+  <button class="essay-filter" data-filter="ecology">ECOLOGY</button>
+  <button class="essay-filter" data-filter="wildlife">WILDLIFE</button>
+  <button class="essay-filter" data-filter="conservation">CONSERVATION</button>
+  <button class="essay-filter" data-filter="landscapes">LANDSCAPES</button>
+  <button class="essay-filter" data-filter="field-notes">FIELD NOTES</button>
+  <button class="essay-filter" data-filter="reflections">REFLECTIONS</button>
+</div>
+
+
+.
+
+
+<a href="the-quiet-stories.html" class="essay-card" data-category="reflections">      <div class="essay-card-image">
+        <img src="../Gallery/images/landscapes/rolling-hills.jpg" alt="Rolling hills beneath an expansive sky">
+      </div>
+      <div class="essay-card-meta">
+        <span>LANDSCAPES</span>
+        <span>04 NOV 2026</span>
+      </div>
+      <h3 class="anchored">The Quiet Stories of the Natural World</h3>
+      <p>Learning to notice the details around us.</p>
+      <span class="essay-card-link">READ ESSAY ↗</span>
+    </a>
+  </section></main></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filters = document.querySelectorAll(".essay-filter");
+  const cards = document.querySelectorAll(".essay-card");
+
+  filters.forEach(function (button) {
+    button.addEventListener("click", function () {
+      const selected = button.dataset.filter;
+
+      // Update active button
+      filters.forEach(function (filter) {
+        filter.classList.remove("active");
+      });
+
+      button.classList.add("active");
+
+      // Filter essay cards
+      cards.forEach(function (card) {
+        const category = card.dataset.category;
+
+        if (selected === "all" || category === selected) {
+          card.classList.remove("is-hidden");
+        } else {
+          card.classList.add("is-hidden");
+        }
+      });
+    });
+  });
+});
+</script>
+
+
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -549,7 +663,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 
 
 

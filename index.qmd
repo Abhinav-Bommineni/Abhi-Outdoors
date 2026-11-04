@@ -37,7 +37,7 @@ I love photography, ecology, birds, music, and exploring the world around me. Th
 
 Through the lens of the natural world.
 
-[Explore →](gallery/index.qmd)
+[Explore →](gallery/photography-index.qmd)
 :::
 :::
 
@@ -59,7 +59,7 @@ Fieldwork, conservation and things growing.
 
 Thoughts, stories and observations.
 
-[Explore →](essays/index.qmd)
+[Explore →](essays/essays.qmd)
 :::
 :::
 
@@ -112,7 +112,7 @@ A collection of moments from the natural world.
 
 :::
 
-[Explore the photography gallery →](gallery/index.qmd)
+[Explore the photography gallery →](gallery/photography-index.qmd)
 
 ## Let's Connect
 

@@ -112,7 +112,7 @@ A collection of moments from the natural world.
 
 :::
 
-[Explore the photography gallery →](gallery/photography-index.qmd)
+[Explore the photography gallery →](gallery/photography-index.html)
 
 ## Let's Connect
 

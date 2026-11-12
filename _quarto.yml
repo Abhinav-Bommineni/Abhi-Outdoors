@@ -16,10 +16,10 @@ website:
       - href: aboutpage/about.qmd
         text: About
 
-      - href: projects/projects.html
+      - href: projects/projects.qmd
         text: Projects
 
-      - href: gallery/photography-index.html
+      - href: Gallery/photography-index.qmd
         text: Photography
 
       - href: essays/essays.qmd
@@ -28,7 +28,7 @@ website:
       - href: Nature_education/nature-education-index.html
         text: Nature Education
 
-      - href: archives/index.html
+      - href: archives/index.qmd
         text: Archives
 
 format:

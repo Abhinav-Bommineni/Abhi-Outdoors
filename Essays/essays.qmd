@@ -65,6 +65,7 @@ that shape the places around us.
 <a href="the-quiet-stories.html" class="essay-card" data-category="reflections">
 READ THE ESSAY ↗
 </a>
+</div>
 
 </div>
 

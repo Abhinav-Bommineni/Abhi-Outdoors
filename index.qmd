@@ -48,7 +48,7 @@ Through the lens of the natural world.
 
 Fieldwork, conservation and things growing.
 
-[Explore →](projects/index.qmd)
+[Explore →](projects/projects.qmd)
 :::
 :::
 
@@ -59,7 +59,7 @@ Fieldwork, conservation and things growing.
 
 Thoughts, stories and observations.
 
-[Explore →](essays/essays.qmd)
+[Explore →](Essays/essays.qmd)
 :::
 :::
 
@@ -70,7 +70,7 @@ Thoughts, stories and observations.
 
 Learning about the natural world.
 
-[Explore →](education/index.qmd)
+[Explore →](nature_education/nature-education-index.qmd)
 :::
 :::
 

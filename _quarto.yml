@@ -14,22 +14,22 @@ website:
       - href: index.qmd
         text: Home
 
-      - href: aboutpage/about.html
+      - href: aboutpage/about.qmd
         text: About
 
-      - href: projects/projects.html
+      - href: projects/projects.qmd
         text: Projects
 
-      - href: Gallery/photography-index.html
+      - href: gallery/photography-index.qmd
         text: Photography
 
-      - href: essays/essays.html
+      - href: essays/essays.qmd
         text: Essays & Field Notes
 
-      - href: Nature_education/nature-education-index.html
+      - href: nature_education/nature-education-index.qmd
         text: Nature Education
 
-      - href: archives/index.html
+      - href: archives/index.qmd
         text: Archives
 
 format:

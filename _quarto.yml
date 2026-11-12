@@ -13,22 +13,23 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: aboutpage/about.qmd
+
+      - href: aboutpage/about.html
         text: About
 
-      - href: projects/projects.qmd
+      - href: projects/projects.html
         text: Projects
 
-      - href: Gallery/photography-index.qmd
+      - href: Gallery/photography-index.html
         text: Photography
 
-      - href: essays/essays.qmd
+      - href: essays/essays.html
         text: Essays & Field Notes
 
       - href: Nature_education/nature-education-index.html
         text: Nature Education
 
-      - href: archives/index.qmd
+      - href: archives/index.html
         text: Archives
 
 format:

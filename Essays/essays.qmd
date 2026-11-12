@@ -7,7 +7,7 @@ format:
 ---
 
 <div class="essays-hero">
-<img src="essays/nanda-devi-hero.jpg" class="essays-hero-image" alt="Nanda Devi illuminated by the morning sun">
+<img src="Essays/nanda-devi-hero.jpg" class="essays-hero-image" alt="Nanda Devi illuminated by the morning sun">
 
 <div class="essays-hero-overlay"></div>
 

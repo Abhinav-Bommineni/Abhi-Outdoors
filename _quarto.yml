@@ -17,19 +17,19 @@ website:
       - href: aboutpage/about.qmd
         text: About
 
-      - href: Projects/projects.qmd
+      - href: projects/projects.qmd
         text: Projects
 
-      - href: Gallery/photography-index.qmd
+      - href: gallery/photography.qmd
         text: Photography
 
-      - href: Essays/essays.qmd
+      - href: essays/essays.qmd
         text: Essays & Field Notes
 
-      - href: Nature_Education/nature-education-index.qmd
+      - href: nature_education/nature-education.qmd
         text: Nature Education
 
-      - href: Archives/index.qmd
+      - href: archives/archives.qmd
         text: Archives
 
 format:

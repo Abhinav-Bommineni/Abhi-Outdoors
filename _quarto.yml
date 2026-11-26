@@ -11,7 +11,7 @@ website:
 
   navbar:
     title: "Abhi Outdoors"
-    title-href: index.qmd
+    logo-href: index.qmd
     left:
       - href: index.qmd
         text: Home

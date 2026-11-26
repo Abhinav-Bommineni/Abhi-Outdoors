@@ -1900,3 +1900,53 @@ body:has(.essay-archive) .essay-archive .essay-card {
   width: 100%;
   display: block;
 }
+
+
+
+/* PROJECTS PAGE ONLY: TRANSPARENT NAVBAR */
+body:has(.projects-hero) #quarto-header,
+body:has(.projects-hero) #quarto-header .navbar {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Dark navigation text */
+body:has(.projects-hero) #quarto-header .navbar-brand,
+body:has(.projects-hero) #quarto-header .nav-link {
+  color: #cacfcb !important;
+}
+
+/* Hover */
+body:has(.projects-hero) #quarto-header .nav-link:hover {
+  color: #71845f !important;
+}
+
+/* PROJECTS PAGE ONLY: WHITE NAVBAR BRAND */
+body:has(.projects-hero) #quarto-header .navbar-brand {
+  color: #ffffff !important;
+}
+
+/* PROJECTS PAGE ONLY: TRANSLUCENT NAVBAR */
+body:has(.projects-hero) #quarto-header,
+body:has(.projects-hero) #quarto-header .navbar {
+  background: rgba(20, 30, 24, 0.48) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* PROJECTS PAGE ONLY: MOVE HERO TEXT RIGHT */
+body:has(.projects-hero) .essays-hero-content {
+  left: auto !important;
+  right: 8% !important;
+  text-align: right;
+  align-items: flex-end;
+}
+
+/* PROJECTS PAGE ONLY: ALIGN HERO DESCRIPTION RIGHT */
+body:has(.projects-hero) .essays-hero-content p {
+  text-align: right !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}

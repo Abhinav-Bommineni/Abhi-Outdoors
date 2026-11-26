@@ -3,9 +3,9 @@ project:
   type: website
   output-dir: _site
   resources:
-    resources:
-  - "Homepage/**"
-  - "gallery/images/**"
+    - "Homepage/**"
+    - "gallery/images/**"
+
 website:
   title: "Abhi Outdoors"
 

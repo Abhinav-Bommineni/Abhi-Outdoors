@@ -1950,3 +1950,46 @@ body:has(.projects-hero) .essays-hero-content p {
   margin-left: auto !important;
   margin-right: 0 !important;
 }
+
+/* ==========================================
+   ESSAYS PAGE: LAYOUT FIX
+   ========================================== */
+
+/* Remove Quarto's article grid on Essays only */
+body:has(.essays-hero) .page-columns {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Keep main content full width */
+body:has(.essays-hero) main.content {
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Prevent horizontal displacement */
+body:has(.essays-hero) #quarto-content {
+  overflow-x: clip;
+}
+
+/* Keep all journal sections centred */
+body:has(.essays-hero) .journal-intro-inner,
+body:has(.essays-hero) .featured-story-inner,
+body:has(.essays-hero) .essay-archive-header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hide any automatically generated category controls */
+body:has(.essays-hero) .quarto-listing-category,
+body:has(.essays-hero) .listing-category,
+body:has(.essays-hero) .listing-filter,
+body:has(.essays-hero) .listing-sort {
+  display: none !important;
+}

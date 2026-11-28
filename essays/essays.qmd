@@ -67,7 +67,7 @@ READ THE ESSAY ↗
 </div>
 
 <div class="featured-story-image">
-<img src="../Gallery/images/birds/asian-green-bee-eater.jpg"
+<img src="../gallery/images/birds/asian-green-bee-eater.jpg"
 alt="Asian Green Bee Eater perched on a branch">
 </div>
 
@@ -100,7 +100,7 @@ alt="Asian Green Bee Eater perched on a branch">
 
 
 <a href="Birdstalking Basics.html" class="essay-card" data-category="Writing">      <div class="essay-card-image">
-        <img src="../gallery/images/birds/Asian-green-bee-eater.jpg" alt="Asian Green Bee Eater perched on a branch">
+        <img src="../gallery/images/birds/asian-green-bee-eater.jpg" alt="Asian Green Bee Eater perched on a branch">
       </div>
       <div class="essay-card-meta">
         <span>Birdwatching</span>

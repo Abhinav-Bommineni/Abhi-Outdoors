@@ -29,15 +29,13 @@ format:
 <h2>Observations from<br>the natural world.</h2>
 
 <p class="journal-intro-description">
-A collection of stories, field observations and reflections on ecology,
-wildlife, conservation and our relationship with the natural world.
-From the quiet details of a forest floor to the larger questions
-shaping our planet, these are notes from a life spent exploring.
+My collection of stories, observations and reflections on nature,
+wildlife, conservation and our relationship with the world.
+From the details of the forest floor to the larger questions shaping our planet, these are notes from my time spent exploring.
 </p>
 
 <div class="journal-intro-bottom">
 <span>ESSAYS · FIELD NOTES · PERSPECTIVES</span>
-<span>01 / THE JOURNAL</span>
 </div>
 
 </div>
@@ -52,17 +50,16 @@ shaping our planet, these are notes from a life spent exploring.
 
 <span class="featured-story-label">FEATURED</span>
 
-<span class="featured-story-category">LANDSCAPES · REFLECTIONS</span>
+<span class="featured-story-category">BIRDS · HOW-TO · WRITING </span>
 
-<h2>The quiet stories of the natural world.</h2>
+<h2>BIRDSTALKING BASICS</h2>
 
 <p>
-A closer look at the landscapes, ecosystems and relationships
-that shape the places around us.
+How to stalk, harass and annoy birds the "right" way. (taught by an expert bird stalker)
 </p>
 
 <div class="essay-card-wrapper">
-<a href="the-quiet-stories.html" class="essay-card" data-category="reflections">
+<a href="Birdstalking Basics.html" class="essay-card" data-category="Writing">
 READ THE ESSAY ↗
 </a>
 </div>
@@ -70,8 +67,8 @@ READ THE ESSAY ↗
 </div>
 
 <div class="featured-story-image">
-<img src="../Gallery/images/landscapes/rolling-hills.jpg"
-alt="Rolling hills beneath an expansive sky">
+<img src="../Gallery/images/birds/asian-green-bee-eater.jpg"
+alt="Asian Green Bee Eater perched on a branch">
 </div>
 
 </div>
@@ -99,65 +96,23 @@ alt="Rolling hills beneath an expansive sky">
 </div>
 
 
-.
 
 
-<a href="the-quiet-stories.html" class="essay-card" data-category="reflections">      <div class="essay-card-image">
-        <img src="../Gallery/images/landscapes/rolling-hills.jpg" alt="Rolling hills beneath an expansive sky">
+
+<a href="Birdstalking Basics.html" class="essay-card" data-category="Writing">      <div class="essay-card-image">
+        <img src="../gallery/images/birds/Asian-green-bee-eater.jpg" alt="Asian Green Bee Eater perched on a branch">
       </div>
       <div class="essay-card-meta">
-        <span>LANDSCAPES</span>
-        <span>04 NOV 2026</span>
+        <span>Birdwatching</span>
+        <span>28 NOV 2026</span>
       </div>
-      <h3>The Quiet Stories of the Natural World</h3>
-      <p>Learning to notice the details around us.</p>
+      <h3>Birdstalking Basics</h3>
+      <p>Explaining how to efficiently stalk birds.</p>
       <span class="essay-card-link">READ ESSAY ↗</span>
     </a>
   </div>
 </section>
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

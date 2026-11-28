@@ -1993,3 +1993,24 @@ body:has(.essays-hero) .listing-filter,
 body:has(.essays-hero) .listing-sort {
   display: none !important;
 }
+
+
+/* Homepage only: remove gap above hero */
+body:has(.hero-container) main.content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+body:has(.hero-container) .hero-container {
+  margin-top: 0 !important;
+}
+
+/* Homepage: prevent horizontal scrolling */
+body:has(.hero-container) {
+  overflow-x: hidden;
+}
+
+body:has(.hero-container) #quarto-content {
+  max-width: 100%;
+  overflow-x: clip;
+}

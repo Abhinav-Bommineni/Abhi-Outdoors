@@ -31,8 +31,7 @@ website:
       - href: nature_education/nature-education.qmd
         text: Nature Education
 
-      - href: archives/archives.qmd
-        text: Archives
+
 
 format:
   html:

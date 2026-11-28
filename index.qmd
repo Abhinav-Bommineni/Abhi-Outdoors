@@ -8,7 +8,7 @@ format:
 
 ::: {.hero-container}
 
-![](Homepage/hero.jpeg){.hero-image}
+![](homepage/hero.jpg){.hero-image}
 
 ::: {.hero-text}
 

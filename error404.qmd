@@ -1,0 +1,38 @@
+
+---
+title: ""
+format:
+  html:
+    page-layout: full
+    toc: false
+    css: 404.css
+---
+
+<div class="lost-page">
+
+  <div class="lost-eyebrow">ABHI'S SPACE / FIELDWORK</div>
+
+  <div class="lost-number">404</div>
+
+  <h1>Lost in the understory?</h1>
+
+  <p class="lost-description">
+    Looks like you've wandered off the trail.
+    The page you're looking for either doesn't exist,
+    has moved, or has successfully evaded detection.
+  </p>
+
+  <p class="lost-small">
+    Even the best field researchers get lost occasionally.
+  </p>
+
+  <div class="lost-links">
+    <a href="./index.html">← BACK HOME</a>
+    <a href="./projects/projects.html">EXPLORE PROJECTS ↗</a>
+  </div>
+
+  <div class="lost-footer">
+    ABHI OUTDOORS · KEEP EXPLORING
+  </div>
+
+</div>

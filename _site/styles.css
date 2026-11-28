@@ -2014,3 +2014,82 @@ body:has(.hero-container) #quarto-content {
   max-width: 100%;
   overflow-x: clip;
 }
+
+
+/* 404 PAGE ONLY */
+
+.lost-page {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 24px;
+  color: #d9dfd1;
+}
+
+.lost-eyebrow {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #aab99b;
+  margin-bottom: 20px;
+}
+
+.lost-number {
+  font-size: clamp(110px, 20vw, 230px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -12px;
+  color: #b6c5a9;
+  opacity: 0.85;
+}
+
+.lost-page h1 {
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 16px;
+  color: #e2e7dc;
+}
+
+.lost-description {
+  max-width: 480px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #b8c0b2;
+}
+
+.lost-small {
+  font-size: 13px;
+  font-style: italic;
+  color: #899782;
+  margin-top: 8px;
+}
+
+.lost-links {
+  display: flex;
+  gap: 30px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lost-links a {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #b6c5a9;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.lost-links a:hover {
+  opacity: 0.6;
+}
+
+.lost-footer {
+  margin-top: 90px;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: #65715f;
+}
